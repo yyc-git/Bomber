@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试</title>
+    <!--jasmine文件-->
+    <link rel="stylesheet" type="text/css" href="../Scripts/jasmine/lib/jasmine-1.3.1/jasmine.css" />
+
+    <script src="../Scripts/jasmine/lib/jasmine-1.3.1/jasmine.js"></script>
+    <script src="../Scripts/jasmine/lib/jasmine-1.3.1/jasmine-html.js"></script>
+
+<!--源代码-->
+
+    <script src="../Scripts/jquery-1.7.js"></script>
+
+    <script src="../Scripts/myTool/pattern/createObject/namespace.js"></script>
+    <script src="../Scripts/myTool/frame/YOOP.js"></script>
+
+
+    <!--配置信息-->
+    <script src="../Scripts/bomber/config.js"></script>
+
+    <!--插件-->
+    <script src="../Scripts/plugIn/progress/jquery.progressbar.js"></script>
+
+
+    <!--Extend-->
+    <script src="../Scripts/myTool/extend/object_extend.js"></script>
+
+    <!--Tool-->
+    <script src="../Scripts/myTool/tool/jsObject/func.js"></script>
+    <script src="../Scripts/myTool/tool/jsObject/array.js"></script>
+    <script src="../Scripts/myTool/tool/asyn/asyn.js"></script>
+    <script src="../Scripts/myTool/tool/type/judge.js"></script>
+    <script src="../Scripts/myTool/tool/codeReuse/extend.js"></script>
+    <script src="../Scripts/myTool/tool/event/event.js"></script>
+    <script src="../Scripts/myTool/tool/game/collision.js"></script>
+
+    <!--Control-->
+    <script src="../Scripts/myTool/control/image/PreLoadImg.js"></script>
+
+
+    <!--组件-->
+    <script src="../Scripts/bomber/component/Bitmap.js"></script>
+    <script src="../Scripts/bomber/component/Hash.js"></script>
+    <script src="../Scripts/bomber/component/Collection.js"></script>
+    <script src="../Scripts/bomber/component/Animation.js"></script>
+    <script src="../Scripts/bomber/component/Sprite.js"></script>
+    <script src="../Scripts/bomber/component/Layer.js"></script>
+
+
+
+    <!--工厂-->
+    <script src="../Scripts/bomber/factory/bitmapFactory.js"></script>
+    <script src="../Scripts/bomber/factory/spriteFactory.js"></script>
+    <script src="../Scripts/bomber/factory/layerFactory.js"></script>
+
+
+    <!--数据-->
+    <script src="../Scripts/bomber/data/map/mapData.js"></script>
+    <script src="../Scripts/bomber/data/map/terrainData.js"></script>
+    <script src="../Scripts/bomber/data/image/images.js"></script>
+    <script src="../Scripts/bomber/data/sprite/data.js"></script>
+    <script src="../Scripts/bomber/data/frames/frames.js"></script>
+
+    <!--算法-->
+    <script src="../Scripts/bomber/algorithm/findPath.js"></script>
+
+
+
+    <!--事件管理-->
+    <script src="../Scripts/bomber/event/KeyEventManager.js"></script>
+
+
+    <!--项目js-->
+    <script src="../Scripts/bomber/js/sprite/MoveSprite.js"></script>
+
+    <script src="../Scripts/bomber/js/Game.js"></script>
+    <script src="../Scripts/bomber/js/main.js"></script>
+
+    <script src="../Scripts/bomber/js/dataOperate/mapDataOperate.js"></script>
+    <script src="../Scripts/bomber/js/dataOperate/terrainDataOperate.js"></script>
+
+    <script src="../Scripts/bomber/js/sprite/FireSprite.js"></script>
+    <script src="../Scripts/bomber/js/sprite/BombSprite.js"></script>
+    <script src="../Scripts/bomber/js/sprite/MapElementSprite.js"></script>
+    <script src="../Scripts/bomber/js/sprite/PlayerSprite.js"></script>
+
+    <script src="../Scripts/bomber/js/layer/FireLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/BombLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/CharacterLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/MapLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/PlayerLayer.js"></script>
+    <script src="../Scripts/bomber/js/LayerManager.js"></script>
+    <script src="../Scripts/bomber/js/layer/EnemyLayer.js"></script>
+    <script src="../Scripts/bomber/js/sprite/EnemySprite.js"></script>
+
+    <!-- 状态模式-->
+    <script src="../Scripts/bomber/pattern/state/PlayerState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/StandState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/WalkState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/WalkState_X.js"></script>
+    <script src="../Scripts/bomber/pattern/state/WalkState_Y.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandDownState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandLeftState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandRightState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandUpState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkDownState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkLeftState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkRightState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkUpState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/Context.js"></script>
+
+    <!--观察者模式-->
+    <script src="../Scripts/myTool/pattern/designPattern/Observer.js"></script>
+
+
+    <!--测试-->
+
+    <script src="../Scripts/jasmine/spec/helper/specHelper.js"></script>
+    <script src="../Scripts/jasmine/src/tool.js"></script>
+
+    <!--算法测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/algorithm/findPathSpec.js"></script>
+
+    <!--组件测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/component/BitmapSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/component/HashSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/component/CollectionSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/component/SpriteSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/component/LayerSpec.js"></script>
+
+    <!--工厂测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/factory/bitmapFactorySpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/component/AnimationSpec.js"></script>
+
+    <!--事件管理测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/event/KeyEventManagerSpec.js"></script>
+
+    <!--项目js测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/GameSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/dataOperate/mapDataOperateSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/layer/FireLayerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/layer/BombLayerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/layer/CharacterLayerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/layer/MapLayerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/layer/PlayerLayerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/layer/EnemyLayerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/LayerManagerSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/sprite/FireSpriteSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/sprite/BombSpriteSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/sprite/MapElementSpriteSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/sprite/PlayerSpriteSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/sprite/EnemySpriteSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/js/sprite/MoveSpriteSpec.js"></script>
+
+
+    <!--状态模式测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/pattern/state/ContextSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/pattern/state/PlayerStateSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/pattern/state/StandLeftStateSpec.js"></script>
+    <script src="../Scripts/jasmine/spec/bomberSpec/pattern/state/WalkLeftStateSpec.js"></script>
+
+
+    <!--集成测试-->
+    <script src="../Scripts/jasmine/spec/bomberSpec/integrationTest/moveIndexSpec.js"></script>
+
+    <!--main的测试放到最后！因为该测试会影响到main.init，会导致后面的测试window.imgLoader为null-->
+      <script src="../Scripts/jasmine/spec/bomberSpec/js/mainSpec.js"></script>
+    
+    
+</head>
+<body>
+
+<!--静态创建canvas，并设置其width、height-->
+<canvas id="mapLayerCanvas" width="600" height="600"></canvas>
+<canvas id="mapLayerCanvas_buffer" width="600" height="600"></canvas>
+
+<canvas id="bombLayerCanvas" width="600" height="600"></canvas>
+<canvas id="fireLayerCanvas" width="600" height="600"></canvas>
+<canvas id="playerLayerCanvas" width="600" height="600"></canvas>
+<canvas id="enemyLayerCanvas" width="600" height="600"></canvas>
+
+
+<script type="text/javascript">
+    (function () {
+        //图片预加载
+        main.initTest();
+
+        function clear() {
+            hideCanvas();
+            $("body").children().not("script").not("canvas").remove();
+        };
+        function hideCanvas() {
+            $("body canvas").hide();
+        };
+
+
+        //延迟执行测试（等待预加载完后执行）
+        setTimeout(function () {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+
+            var htmlReporter = new jasmine.HtmlReporter();
+
+            jasmineEnv.addReporter(htmlReporter);
+
+            jasmineEnv.specFilter = function (spec) {
+                return htmlReporter.specFilter(spec);
+            };
+            function execJasmine() {
+                jasmineEnv.execute();
+            }
+
+
+            var currentWindowOnload = window.onload;
+
+
+            clear();
+
+            if (currentWindowOnload) {
+                currentWindowOnload();
+            }
+            execJasmine();
+        }, 500);
+    })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>炸弹人游戏</title>
+    <script src="../Scripts/jquery-1.7.js"></script>
+
+    <script src="../Scripts/myTool/pattern/createObject/namespace.js"></script>
+    <script src="../Scripts/myTool/frame/YOOP.js"></script>
+
+
+    <!--配置信息-->
+    <script src="../Scripts/bomber/config.js"></script>
+
+    <!--插件-->
+    <script src="../Scripts/plugIn/progress/jquery.progressbar.js"></script>
+
+
+    <!--Extend-->
+    <script src="../Scripts/myTool/extend/object_extend.js"></script>
+
+    <!--Tool-->
+    <script src="../Scripts/myTool/tool/jsObject/func.js"></script>
+    <script src="../Scripts/myTool/tool/jsObject/array.js"></script>
+    <script src="../Scripts/myTool/tool/asyn/asyn.js"></script>
+    <script src="../Scripts/myTool/tool/type/judge.js"></script>
+    <script src="../Scripts/myTool/tool/codeReuse/extend.js"></script>
+    <script src="../Scripts/myTool/tool/event/event.js"></script>
+    <script src="../Scripts/myTool/tool/game/collision.js"></script>
+
+    <!--Control-->
+    <script src="../Scripts/myTool/control/image/PreLoadImg.js"></script>
+
+
+    <!--组件-->
+    <script src="../Scripts/bomber/component/Bitmap.js"></script>
+    <script src="../Scripts/bomber/component/Hash.js"></script>
+    <script src="../Scripts/bomber/component/Collection.js"></script>
+    <script src="../Scripts/bomber/component/Animation.js"></script>
+    <script src="../Scripts/bomber/component/Sprite.js"></script>
+    <script src="../Scripts/bomber/component/Layer.js"></script>
+
+
+
+    <!--工厂-->
+    <script src="../Scripts/bomber/factory/bitmapFactory.js"></script>
+    <script src="../Scripts/bomber/factory/spriteFactory.js"></script>
+    <script src="../Scripts/bomber/factory/layerFactory.js"></script>
+
+
+    <!--数据-->
+    <script src="../Scripts/bomber/data/map/mapData.js"></script>
+    <script src="../Scripts/bomber/data/map/terrainData.js"></script>
+    <script src="../Scripts/bomber/data/image/images.js"></script>
+    <script src="../Scripts/bomber/data/sprite/data.js"></script>
+    <script src="../Scripts/bomber/data/frames/frames.js"></script>
+
+    <!--算法-->
+    <script src="../Scripts/bomber/algorithm/findPath.js"></script>
+
+
+
+    <!--事件管理-->
+    <script src="../Scripts/bomber/event/KeyEventManager.js"></script>
+
+
+    <!--项目js-->
+    <script src="../Scripts/bomber/js/sprite/MoveSprite.js"></script>
+
+    <script src="../Scripts/bomber/js/Game.js"></script>
+    <script src="../Scripts/bomber/js/main.js"></script>
+
+    <script src="../Scripts/bomber/js/dataOperate/mapDataOperate.js"></script>
+    <script src="../Scripts/bomber/js/dataOperate/terrainDataOperate.js"></script>
+
+    <script src="../Scripts/bomber/js/sprite/FireSprite.js"></script>
+    <script src="../Scripts/bomber/js/sprite/BombSprite.js"></script>
+    <script src="../Scripts/bomber/js/sprite/MapElementSprite.js"></script>
+    <script src="../Scripts/bomber/js/sprite/PlayerSprite.js"></script>
+
+    <script src="../Scripts/bomber/js/layer/FireLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/BombLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/CharacterLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/MapLayer.js"></script>
+    <script src="../Scripts/bomber/js/layer/PlayerLayer.js"></script>
+    <script src="../Scripts/bomber/js/LayerManager.js"></script>
+    <script src="../Scripts/bomber/js/layer/EnemyLayer.js"></script>
+    <script src="../Scripts/bomber/js/sprite/EnemySprite.js"></script>
+
+    <!-- 状态模式-->
+    <script src="../Scripts/bomber/pattern/state/PlayerState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/StandState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/WalkState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/WalkState_X.js"></script>
+    <script src="../Scripts/bomber/pattern/state/WalkState_Y.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandDownState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandLeftState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandRightState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/standState/StandUpState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkDownState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkLeftState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkRightState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/walkState/WalkUpState.js"></script>
+    <script src="../Scripts/bomber/pattern/state/Context.js"></script>
+
+    <!--观察者模式-->
+    <script src="../Scripts/myTool/pattern/designPattern/Observer.js"></script>
+
+</head>
+<body>
+
+<!--静态创建canvas，并设置其width、height-->
+<canvas id="mapLayerCanvas" width="600" height="600"></canvas>
+<canvas id="mapLayerCanvas_buffer" width="600" height="600"></canvas>
+
+<canvas id="bombLayerCanvas" width="600" height="600"></canvas>
+<canvas id="fireLayerCanvas" width="600" height="600"></canvas>
+<canvas id="playerLayerCanvas" width="600" height="600"></canvas>
+<canvas id="enemyLayerCanvas" width="600" height="600"></canvas>
+
+
+<script type="text/javascript">
+    (function () {
+        main.init();
+    })();
+</script>
+
+</body>
+</html>
