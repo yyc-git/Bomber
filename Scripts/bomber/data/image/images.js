@@ -14,7 +14,7 @@
         };
 
         return function (id) {
-            return imgs[id];
+            return bomberConfig.url_pre.main.IMAGE + imgs[id];
         };
     }());
 
