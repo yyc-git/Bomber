@@ -98,7 +98,9 @@
     if (!Object._extend) {
         Object._extend = function (destination, source) {
             for (var property in source) {
-                destination[property] = source[property];
+                // if (!destination[property]) {
+                    destination[property] = source[property];
+                // }
             }
             return destination;
         }
@@ -193,6 +195,10 @@
          alert(index);   //  -> 1
          */
         function indexOf(iterator) {
+            if(iterator === "2d"){
+                return;
+            };
+
             var result = -1;
             var t = null;
             this.each(function (value, index) {
